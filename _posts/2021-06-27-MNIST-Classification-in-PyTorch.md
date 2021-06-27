@@ -23,7 +23,7 @@ This are some imports that will be required. I will explain the importance of ea
 
 For any machine learning project Data is very important. For this project we will need the MNIST dataset which is a database of handwritten digits. This dataset consists of 70,000 images out of which 60,000 are used for training and 10,000 are used for testing.
 
-![MNIST Data](../images/mnist_image.png)
+![MNIST Data](/images/mnist_image.png)
 
 Fortunately, PyTorch itself provides the data, making our job easy. Therefore, we dont need to download it separately and load it into our project. But there is a catch, the data that we get are images and their labels. We cannot use this data directly in PyTorch as it only works with Tensors. Therefore, we need to convert the image into tensor before going forward to implementing Neural Network. 
 Apart from this, we also need to normalize the data so that every feature in input has the same scale. This helps avoid any problem when working with data having one feature ranging from 0 to 10 and other feature ranging from 10,000 to 50,000. Both of them can be scaled between 0 to 1 accordingly.
